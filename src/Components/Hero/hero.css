@@ -1,0 +1,146 @@
+.hero{
+    background-color: #2f3030;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    color: white;
+    padding: 0 20px;
+}
+.second-hero-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-wrap: break-word; 
+    word-wrap: break-word;  
+    word-break: break-word; 
+}
+.second-hero-div div{
+    text-align: center;
+}
+.hero div{
+    font-size: 35px;
+}
+.hero span{
+    color: rgb(3, 210, 224);
+    font-weight: 600;
+}
+.hero-btn {
+    --hue: 190;
+    font-family: inherit;
+    margin-top: 20px;
+    position: relative;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: hsl(var(--hue), 100%, 41%);
+    border: 1px solid hsl(var(--hue), 100%, 41%);
+    outline: transparent;
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+    transition: 0.25s;
+}
+
+.hero-btn:hover {
+    background: hsl(var(--hue), 100%, 31%);
+}
+
+.hero-btn {
+    --hue: 187;
+}
+
+.hero-btn {
+    color: hsl(var(--hue), 100%, 41%);
+    background-color: transparent;
+    border-color: hsl(var(--hue), 100%, 41%);
+}
+
+.hero-btn:hover {
+    color: white;
+}
+
+.hero-btn {
+    color: white;
+}
+
+.hero-btn::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      hsla(var(--hue), 100%, 41%, 0.5),
+      transparent
+    );
+    transform: translateX(-100%);
+    transition: 0.6s;
+}
+
+.hero-btn:hover {
+    background: transparent;
+    box-shadow: 0 0 20px 10px hsla(var(--hue), 100%, 41%, 0.5);
+}
+
+.hero-btn:hover::before {
+    transform: translateX(100%);
+}
+@media (max-width: 768px) {
+  .hero-btn {
+    font-size: 0.8rem;
+    padding: 0.8rem 2rem;
+  }
+  .second-hero-div div{
+    font-size: 22px;
+  }
+}
+@media (max-width: 215px) {
+  .hero-btn {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+  .second-hero-div div{
+    font-size: 18px;
+  }
+}
+.hero-icons{
+    margin: 20px 0;
+}
+.hero-icon{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    color: #7a7a7a;
+    margin: 2px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    isolation: isolate;
+    transition: 300ms ease-in;
+}
+.hero-icon:hover{
+    color: rgb(3, 210, 224);
+    background-color: #4b4c4d;
+}
+.particles{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}

@@ -1,0 +1,132 @@
+.footer{
+    background-color: #2f3030;
+    width: 100vw;
+    padding: 60px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sub-footer{
+    text-align: center;
+    font-size: 13px;
+    color: #7e7e7e;
+}
+.footer-links ul {
+    display: flex;
+    padding: 0;
+    margin-top: 2px;
+}
+.footer-links ul li{
+    display: inline-block;
+}
+.footer-links ul li a{
+    text-decoration: none;
+    margin: 0 15px;
+    color: white;
+    font-size: 16px;
+    transition: 0.1s ease-in;
+}
+.footer-links ul li a:hover{
+    color: rgb(3, 210, 224);
+    border-bottom: 2px solid rgb(3, 210, 224);
+    padding-bottom: 5px;
+}
+  .footer-icon:hover{
+      color: white;
+      cursor: pointer;
+  }
+.footer-icon{
+    width: 30px;
+    height: 30px; 
+    border-radius: 50%;
+    padding: 10px;
+    color: #e7e7e7;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    isolation: isolate;
+    transition: 300ms ease-in;
+}
+.footer-icon:hover{
+    color: rgb(3, 210, 224);
+    background-color: #4b4c4d;
+}
+.footer-to-top-icon{
+    width: 30px;
+    height: 30px;
+    color: hsl(210, 100%, 99%);
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: 200ms ease-in;
+}
+.footer-to-top-icon:hover{
+    color: rgb(3, 210, 224);
+}
+.footer-icons{
+    margin: 20px 0px;
+}
+
+@media (max-width: 500px) {
+    .footer-links ul li a{
+        margin: 0 10px;
+        font-size: 14px;
+    }
+    .sub-footer{
+        font-size: 11px;
+    }
+    .footer-icon{
+        width: 25px;
+        height: 25px;
+    }
+    .footer-to-top-icon{
+        width: 25px;
+        height: 25px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 370px) {
+    .footer-icon, .footer-to-top-icon{
+        width: 17px;
+        height: 17px;
+    }
+    .footer-links{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .footer-to-top-icon{
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 365px) {
+    .footer-links ul {
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 40px;
+    }
+    
+    .footer-links {
+        text-align: left; 
+        margin-right: auto; 
+    }
+}
+@media (max-width: 316px) {
+    .footer-links ul {
+        margin-left: 0px;
+    }
+}
+@media (max-width: 300px) {
+    .footer-icon{
+        margin: 10px 5px;
+    }
+}
+@media (max-width: 285px) {
+    .footer-icon{
+        margin: 10px 5px 10px 0px;
+    }
+}
+.footer-hr{
+    border: 0.1px solid grey;
+}

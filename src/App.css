@@ -1,0 +1,35 @@
+html, .body-div, section {
+    block-size: 100%;
+    scroll-behavior: smooth;
+}
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.app-hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+.body-div{
+    position: relative;
+    z-index: 3;
+    padding: 0px 100px 20px 100px;
+}
+@media (max-width: 1200px) {
+    .body-div{
+        padding: 120px 50px 0px 50px;
+    }
+}
+@media (max-width: 450px) {
+    .body-div{
+        padding: 120px 40px 0px 40px;
+    }
+}
+@media (max-width: 350px) {
+    .body-div{
+        padding: 120px 30px 0px 30px;
+    }
+}

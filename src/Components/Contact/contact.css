@@ -1,0 +1,123 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 120px 0px;
+}
+.contact-h2-div{
+    background-color: #2f3030;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.contact-h1{
+    color: #2f3030;
+    font-size: 3rem;
+}
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 2px solid #4b4c4d;
+  border-radius: 2px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 25px; 
+  resize: vertical; 
+  height: 62px;
+  font-family: inherit;
+}
+
+.contact-button {
+  padding: 12px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 2px solid #4b4c4d;
+  background-color: white;
+  color: #4b4c4d;
+  text-align: center;
+  font-weight: 600;
+  font-family: inherit;
+  padding: 0px 20px;
+  position: relative;
+  isolation: isolate;
+  font-size: 15px;
+}
+.contact-button::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-color: #4b4c4d;
+    inset: 0;
+    scale: 0 1;
+    transform-origin: right;
+    transition: scale 450ms;
+}
+.contact-button:hover{
+    color: white;
+    cursor: pointer;
+}
+.contact-button:hover .contact-send-button-icon {
+    color: white;
+}
+.contact-button:hover::after, .contact-button:focus-visible::after{
+    transform-origin: left;
+    scale: 1 1;
+}
+.contact-icon{
+    color: #4b4c4d;
+}
+.second-div{
+    display: flex;
+    justify-content: space-between;
+}
+.dream-website{
+    font-weight: 600;
+}
+form label{
+    color: #4b4c4d;
+}
+.contact p{
+    color: #4b4c4d;
+}
+
+@media (max-width: 1150px) {
+    .contact{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .form-div{
+        width: 100%;
+    }
+}
+@media (max-width: 650px) {
+    .second-div{
+        flex-direction: column-reverse;
+    }
+    .second-div > input{
+        width: 100%;
+    }
+    .contact-button{
+        width: 100%;
+        padding: 13px 0px;
+    }
+    .email-address{
+        word-break: break-all;
+    }
+    .contact-h1{
+        font-size: 9vw;
+    }
+    .contact-h2-div{
+        font-size: 4vw;
+    }
+    .contact-p{
+        font-size: 3.5vw;
+    }
+}
+@media (max-width: 450px) {
+    .email-address{
+        font-size: 3.2vw;
+    }
+}
