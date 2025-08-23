@@ -1,16 +1,15 @@
-import { useCallback } from "react";
+import React, { useCallback } from 'react';
 import Particles from "react-tsparticles";
 import './particles.css';
-import { loadSlim } from "tsparticles-slim"; 
 
 const ParticlesBackground = () => {
     const particlesInit = useCallback(async engine => {
         console.log(engine);
-        await loadSlim(engine);
+        // No need to loadSlim for tsparticles v1.x
     }, []);
 
     const particlesLoaded = useCallback(async container => {
-        await console.log(container);
+        console.log(container);
     }, []);
 
     return (
@@ -91,4 +90,5 @@ const ParticlesBackground = () => {
         />
     );
 };
+
 export default ParticlesBackground;

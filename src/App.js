@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import Footer from './Components/Footer/footer';
 import Contact from './Components/Contact/contact';
