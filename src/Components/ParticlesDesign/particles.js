@@ -5,7 +5,6 @@ import './particles.css';
 const ParticlesBackground = () => {
     const particlesInit = useCallback(async engine => {
         console.log(engine);
-        // No need to loadSlim for tsparticles v1.x
     }, []);
 
     const particlesLoaded = useCallback(async container => {
